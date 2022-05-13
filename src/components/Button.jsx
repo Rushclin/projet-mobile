@@ -5,7 +5,7 @@ const Button = (props) => {
     const { value, special, clickEvent } = props;
 
     return (
-        <IonCol className={`${special ? styles.specialButton : styles.button} animate__animated animate__faster`} onClick={e => clickEvent(e, value)}>
+        <IonCol className={`${special ? styles.specialButton : styles.button}`} onClick={e => clickEvent(e, value)}>
             {value === "/" ? <>&divide;</> : value === "*" ? <>&times;</> : value}
         </IonCol>
     );

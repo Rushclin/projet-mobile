@@ -13,12 +13,12 @@ import { useEffect, useState } from "react";
 
 const Home = () => {
 
-  const [showTitle, setShowTitle] = useState("_______");
+  const [showTitle, setShowTitle] = useState("");
   const [sum, setSum] = useState(0)
-  const [sumHistory, setSumHistory] = useState("Calculateur");
+  const [sumHistory, setSumHistory] = useState("");
 
   const handleClick = (e, operateur) => {
-    const tempSumHistory = sumHistory.replace("Calculateur ", "");
+    const tempSumHistory = sumHistory.replace(" ", "");
     if (operateur === "=") {
       calculate()
     } else if (operateur === "C") {
@@ -26,40 +26,33 @@ const Home = () => {
     } else if (operateur === "Del") {
       backspace()
     } else {
-      e.target.classList.add("animate__headShake");
-
       setTimeout(() => {
         setSumHistory(tempSumHistory + operateur);
-        e.target.classList.remove("animate__headShake");
       }, 500);
     }
   }
   useEffect(() => {
-
     calculate();
   }, [sumHistory]);
 
   const calculate = () => {
-
     try {
-      // eslint-disable-next-line no-eval
+      // Effectuer le calcule
       setSum(eval(sumHistory).length > 5 ? eval(sumHistory).toFixed(4) : eval(sumHistory));
-      setShowTitle("Calculateur Rushclin");
+      setShowTitle("");
     } catch (e) {
-
-
+      // Aucun evenement a attraper ici
     }
   }
 
   const reset = () => {
 
-    setSumHistory("Ionic Calculator");
+    setSumHistory("");
     setSum("0");
     setShowTitle("_______");
   }
 
   const backspace = () => {
-
     const tempSum = sumHistory.substr(0, sumHistory.length - 1);
     setSumHistory(tempSum);
   }
@@ -68,7 +61,6 @@ const Home = () => {
     <IonPage>
       <IonHeader>
         <div className={styles.sumContainer}>
-
           {showTitle && <h4>{showTitle}</h4>}
           <p>{sumHistory}</p>
           <h1 className="animate__animated animate__headShake">{sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
