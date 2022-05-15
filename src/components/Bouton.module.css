@@ -1,18 +1,17 @@
-.button,
-.specialButton {
+.speciale,
+.nonSpeciale {
   margin: 0.2rem;
   padding: 1.5rem;
-  margin: 0.2rem;
   border-radius: 15px;
   font-size: 1.5rem;
 }
 
-.button {
+.nonSpeciale {
   color: rgb(255, 255, 255);
   background-color: rgb(58, 58, 58);
 }
 
-.specialButton {
+.speciale {
   color: rgb(255, 255, 255);
-  background-color: var(--blue-color);
+  background-color: rgb(10, 10, 10);
 }
