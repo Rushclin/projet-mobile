@@ -19,14 +19,14 @@ const Home = () => {
             calcluer()
         } else if (operateur === "C") {
             reinitialiser()
-        } else if (operateur === "Del") {
+        } else if (operateur === "⌫") {
             effacer()
         } else {
-            e.target.classList.add("animate__headShake");
+            setHistoriqueSomme(historiqueTmp + operateur)
+            e.target.classList.add("clik");
             setTimeout(() => {
-                setHistoriqueSomme(historiqueTmp + operateur)
-                e.target.classList.remove("animate__headShake");
-            }, 100)
+                e.target.classList.remove("clik");
+            }, 500)
         }
     }
 
@@ -36,7 +36,6 @@ const Home = () => {
 
     const calcluer = () => {
         try {
-            // Effectuer le calcul  
             setSomme(eval(historiqueSomme).length > 5 ? eval(historiqueSomme).toFixed(4) : eval(historiqueSomme))
             setAffTitre("")
         } catch (e) {
@@ -68,7 +67,7 @@ const Home = () => {
         <IonPage>
             <IonHeader>
                 <IonToolbar>
-                    <IonTitle><h1>Calculatrice TR. </h1></IonTitle>
+                    <IonTitle><h1><strong>Calculatrice</strong></h1></IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent className="ion-padding">
