@@ -21,6 +21,7 @@
 - On a appris a utiliser les composants Ionic
 - Utiliser les HOOKS de REACTJS
 - Le CSS dans Ionic
+- Utilisation de Capacitor
 
 ### Pour tester
 
