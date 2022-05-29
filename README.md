@@ -2,13 +2,12 @@
 
 ### Liste des membres
 
-````TAKAM RUSHCLIN - Matricule : CM-UDS-19SCI1192
+```TAKAM RUSHCLIN - Matricule : CM-UDS-19SCI1192
     SIMO KOM YANNICK MANDELA - Matricule : CM-UDS-19SCI1151
     SINDA TAKOUDJOU JORDAN - Matricule : CM-UDS-19SCI2192
     NOUMECHI NGANSOP LIONNEL DUVAL - Matricule : CM-UDS-19SCI1071
     NGATCHE NJANTOU DALISHA MYLOVE - Matricule : CM-UDS-19SCI0932
 ```
-
 
 ![SIMPLE ET RAPIDE](https://github.com/Rushclin/projet-mobile/blob/main/assets/img/capture.png)
 
@@ -27,4 +26,4 @@
 ```Avec node js
     npm install
     ionic serve ou npm start
-````
+```
