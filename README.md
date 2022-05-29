@@ -1,4 +1,15 @@
-# Une calculatrice simple fonctionnelle avec IONIC REACT
+# Une calculatrice simple fonctionnelle avec IONIC
+
+### Liste des membres
+
+````
+    TAKAM RUSHCLIN - Matricule : CM-UDS-19SCI1192
+    SIMO KOM YANNICK MANDELA : CM-UDS-19SCI1151
+    SINDA TAKOUDJOU JORDAN : CM-UDS-19SCI2192
+    NOUMECHI NGANSOP LIONNEL DUVAL : CM-UDS-19SCI1071
+    NGATCHE NJANTOU DALISHA MYLOVE : CM-UDS-19SCI0932
+```
+
 
 ![SIMPLE ET RAPIDE](https://github.com/Rushclin/projet-mobile/blob/main/assets/img/capture.png)
 
@@ -17,4 +28,4 @@
 ```Avec node js
     npm install
     ionic serve ou npm start
-```
+````
